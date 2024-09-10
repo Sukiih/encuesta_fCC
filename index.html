@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Waleska">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Encuesta</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Mi formulario</h1>
+        <p id="description">Este es el formulario que he realizado para cumplir con el desafío de freeCodeCamp</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Nombre</label>
+            <input id="name" name="name" type="text" placeholder="Pedro" required/>
+
+            <label for="email" id="email-label">Email</label>
+            <input id="email" name="email" type="email" placeholder="pedro@gmail.com" required/>
+
+            <label for="number" id="number-label">Ingresa tu edad</label>
+            <input id="number" name="number" type="number" min="13" max="120" placeholder="18"/>
+
+            <label for="dropdown">¿Cómo nos conociste?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Otra red social">Otra red social</option>
+            </select>
+
+            <h3>Seleccione su género:</h3>
+                <div class="radio-group">
+                    <label for="gender-female">Femenino</label>
+                    <input id="gender-female" name="gender" type="radio" value="femenino"/>
+                    
+                    <label for="gender-male">Masculino</label>
+                    <input id="gender-male" name="gender" type="radio" value="masculino"/>
+                </div>
+
+                <h3>Seleccione los lenguajes que desea conocer:</h3>
+                <div class="checkbox-group">
+                    <label for="py">Python</label>
+                    <input id="py" name="languages" type="checkbox" value="python"/>
+                    
+                    <label for="js">JavaScript</label>
+                    <input id="js" name="languages" type="checkbox" value="javascript"/>
+                    
+                    <label for="php">PHP</label>
+                    <input id="php" name="languages" type="checkbox" value="php"/>
+                </div>
+
+            <h3>¿Deseas aprender otro lenguaje? Indícanos cuál:</h3>
+            <label for="comentarios">Escribe aquí:</label>
+            <textarea id="comentarios" name="comentarios" cols="30" rows="2" placeholder="Me gustaría aprender..."></textarea>
+
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

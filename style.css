@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: repeating-radial-gradient(circle, #12061a, #bdabd3,#8b32f1, #12061a,#bdabd3);
+    animation: rotate 2s linear infinite;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@keyframes rotate {
+    0% {
+        background: radial-gradient(circle, #8b32f1, #b054ec, #d6bcf3, #ca9ffc, #d1aae7);
+    }
+    100% {
+        background: radial-gradient(circle, #d1aae7, #ca9ffc, #d6bcf3, #b054ec, #8b32f1);
+    }
+}
+
+.container {
+    text-align: start; 
+}
+
+#survey-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px double #3f00b365;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group label, .checkbox-group label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0; 
+}
+
+.radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #9900ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3f00b3;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
